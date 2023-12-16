@@ -1,0 +1,22 @@
+ 
+<div class="container" id="shop">
+  <div class="row">
+      @for( item of district; track item.id){
+        <div class="col-lg-3" style="width:5px 18rem;">
+          <div class="col">
+              <div class="card" style="width:5px 18rem;">
+                  <img src="{{ item.image }}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">{{item.title}}</h5>
+                    <p class="card-text">{{item.dis}}</p>
+                    <a [routerLink]="['/district', item.id]" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+          </div>
+          </div>
+                                                     
+
+      }
+  </div>
+
+</div>
